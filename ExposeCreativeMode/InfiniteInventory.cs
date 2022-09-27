@@ -184,7 +184,7 @@ namespace DysonSphereProgram.Modding.ExposeCreativeMode
 
     private static int GetRequiredSize(int count)
     {
-      var colCount = UIRoot.instance.uiGame.inventory.colCount;
+      var colCount = UIRoot.instance.uiGame.inventoryWindow.inventory.colCount;
       // We need to set extra size, otherwise the UI bugs out when dropping items on the extra space
       // by throwing an IndexOutOfRange exception
       return count + (count % colCount > 0 ? colCount - (count % colCount) : 0);
@@ -200,7 +200,7 @@ namespace DysonSphereProgram.Modding.ExposeCreativeMode
       public InventoryWindowDeactivationContext()
       {
         uiGame = UIRoot.instance && UIRoot.instance.uiGame ? UIRoot.instance.uiGame : null;
-        wasActive = uiGame && uiGame.inventory && uiGame.inventory.active;
+        wasActive = uiGame && uiGame.inventoryWindow && uiGame.inventoryWindow.active;
         if (wasActive)
           uiGame.ShutPlayerInventory();
       }
