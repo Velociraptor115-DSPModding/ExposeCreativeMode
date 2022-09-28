@@ -3,14 +3,14 @@ This mod allows you to enable "Creative Mode" and play without limitations (Well
 Enabling "Creative Mode" will disable achievements for the save, so keep a separate save to use it on.
 
 ## What's new in this update?
-* Fixed a compatibility issue with BulletTime mod
+* Fixed compatiblity with the September 27, 2022 patch (Game version 0.9.27.14546)
 * A more comprehensive revamp of the mod will be uploaded in a few days (not kidding)
 
 ## How to use this mod
 * First install the mod, and reboot the game.
 * Press Shift + F4 to open the creative mode settings window  
-![Creative Mode Settings Window](https://github.com/Velociraptor115/DSPMods/blob/main/ExposeCreativeMode/Docs/CreativeModeSettingsWindow.png?raw=true)  
-![Creative Mode Settings Window Enabled](https://github.com/Velociraptor115/DSPMods/blob/main/ExposeCreativeMode/Docs/CreativeModeSettingsWindow_Enabled.png?raw=true)
+![Creative Mode Settings Window](https://github.com/Velociraptor115-DSPModding/ExposeCreativeMode/blob/main/ExposeCreativeMode/Docs/CreativeModeSettingsWindow.png?raw=true)  
+![Creative Mode Settings Window Enabled](https://github.com/Velociraptor115-DSPModding/ExposeCreativeMode/blob/main/ExposeCreativeMode/Docs/CreativeModeSettingsWindow_Enabled.png?raw=true)
 * You need to enable creative mode to use the rest of the functions below
 
 ## Functions
@@ -74,12 +74,15 @@ All controls are rebindable. Detailed explanation of functions are given further
 
 ## Contact / Feedback / Bug Reports
 You can either find me on the DSP Discord's #modding channel  
-Or you can create an issue on [GitHub](https://github.com/Velociraptor115/DSPMods)  
+Or you can create an issue on [GitHub](https://github.com/Velociraptor115-DSPModding/ExposeCreativeMode)  
 \- Raptor#4825
 
 ## Changelog
 
-### [v0.0.17](https://dsp.thunderstore.io/package/Raptor/ExposeCreativeMode/0.0.16/)
+### [v0.0.18](https://dsp.thunderstore.io/package/Raptor/ExposeCreativeMode/0.0.18/)
+* Fixed compatiblity with the September 27, 2022 patch (Game version 0.9.27.14546)
+
+### [v0.0.17](https://dsp.thunderstore.io/package/Raptor/ExposeCreativeMode/0.0.17/)
 * Fixed a compatiblity issue with BulletTime mod
 
 ### [v0.0.16](https://dsp.thunderstore.io/package/Raptor/ExposeCreativeMode/0.0.16/)
