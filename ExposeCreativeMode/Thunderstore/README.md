@@ -3,8 +3,7 @@ This mod allows you to enable "Creative Mode" and play without limitations (Well
 Enabling "Creative Mode" will disable achievements for the save, so keep a separate save to use it on.
 
 ## What's new in this update?
-* Fixed compatiblity with the September 27, 2022 patch (Game version 0.9.27.14546)
-* A more comprehensive revamp of the mod will be uploaded in a few days (not kidding)
+* Fixed Instant Research for logistic bot techs
 
 ## How to use this mod
 * First install the mod, and reboot the game.
@@ -78,6 +77,9 @@ Or you can create an issue on [GitHub](https://github.com/Velociraptor115-DSPMod
 \- Raptor#4825
 
 ## Changelog
+
+### [v0.0.19](https://dsp.thunderstore.io/package/Raptor/ExposeCreativeMode/0.0.19/)
+* Fixed Instant Research for logistic bot techs
 
 ### [v0.0.18](https://dsp.thunderstore.io/package/Raptor/ExposeCreativeMode/0.0.18/)
 * Fixed compatiblity with the September 27, 2022 patch (Game version 0.9.27.14546)
