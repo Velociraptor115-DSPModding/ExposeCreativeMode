@@ -393,11 +393,19 @@ namespace DysonSphereProgram.Modding.ExposeCreativeMode
     static void LockRecipe(int recipeId)
     {
       GameMain.history.recipeUnlocked.Remove(recipeId);
+      if (recipeId == 122)
+      {
+        GameMain.mainPlayer.deliveryPackage.unlocked = false;
+      }
     }
 
     static void UnlockRecipe(int recipeId)
     {
       GameMain.history.recipeUnlocked.Add(recipeId);
+      if (recipeId == 122)
+      {
+        GameMain.mainPlayer.deliveryPackage.unlocked = true;
+      }
     }
 
     private static double SumLevelValues(double init, List<TechFunctionLevelRangeValue> levelDetails, int level)
@@ -602,6 +610,22 @@ namespace DysonSphereProgram.Modding.ExposeCreativeMode
             history.remoteStationExtraStorage = valueAfter;
             UpdateLocalStationExtraStorage(valueBefore, valueAfter, isRemoteStation);
           }
+          break;
+        case 32:
+          player.deliveryPackage.colCount = SumLevelValuesInt(0, levelDetails, level);
+          player.deliveryPackage.NotifySizeChange();
+          break;
+        case 33:
+          player.deliveryPackage.stackSizeMultiplier = SumLevelValuesInt(freeMode.deliveryPackageStackSizeMultiplier, levelDetails, level);
+          break;
+        case 34:
+          history.logisticCourierSpeedScale = SumLevelValuesFloat(1f, levelDetails, level);
+          break;
+        case 35:
+          history.logisticCourierCarries = SumLevelValuesInt(freeMode.logisticCourierCarries, levelDetails, level);
+          break;
+        case 36:
+          history.dispenserDeliveryMaxAngle = SumLevelValuesFloat(freeMode.dispenserDeliveryMaxAngle, levelDetails, level);
           break;
         case 99:
           history.missionAccomplished = level >= 0;
