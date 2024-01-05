@@ -11,7 +11,7 @@ namespace DysonSphereProgram.Modding.ExposeCreativeMode
     private readonly Player player;
     private readonly StorageComponent infiniteInventory;
     
-    private int? sandRestore;
+    private long? sandRestore;
     StorageComponent infiniteInventoryRestore;
 
     private int prevInventorySize;
@@ -179,8 +179,8 @@ namespace DysonSphereProgram.Modding.ExposeCreativeMode
 
     private IList<int> GetItemIdsFiltered() => LDB.items.dataArray.Where(itemFilter).Select(x => x.ID).ToList();
     private Func<ItemProto, bool> itemFilter => IncludeLocked ? AllItemsPredicate : OnlyUnlockedItemsPredicate; 
-    private static bool OnlyUnlockedItemsPredicate(ItemProto item) => GameMain.history.ItemUnlocked(item.ID);
-    private static bool AllItemsPredicate(ItemProto item) => true;
+    private static bool OnlyUnlockedItemsPredicate(ItemProto item) => item.ID != ItemProto.kSoilPileId && GameMain.history.ItemUnlocked(item.ID);
+    private static bool AllItemsPredicate(ItemProto item) => item.ID != ItemProto.kSoilPileId;
 
     private static int GetRequiredSize(int count)
     {
