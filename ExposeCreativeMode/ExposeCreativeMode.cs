@@ -8,6 +8,7 @@ using HarmonyLib;
 using UnityEngine;
 using CommonAPI;
 using CommonAPI.Systems;
+using CommonAPI.Systems.ModLocalization;
 using crecheng.DSPModSave;
 using DysonSphereProgram.Modding.ExposeCreativeMode.UI.Builder;
 
@@ -15,7 +16,7 @@ namespace DysonSphereProgram.Modding.ExposeCreativeMode
 {
   [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
   [BepInDependency(CommonAPIPlugin.GUID)]
-  [CommonAPISubmoduleDependency(nameof(ProtoRegistry), nameof(CustomKeyBindSystem))]
+  [CommonAPISubmoduleDependency(nameof(LocalizationModule), nameof(CustomKeyBindSystem))]
   public class Plugin : BaseUnityPlugin, IModCanSave
   {
     private Harmony _harmony;

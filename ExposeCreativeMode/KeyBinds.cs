@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using CommonAPI.Systems;
+using CommonAPI.Systems.ModLocalization;
 
 namespace DysonSphereProgram.Modding.ExposeCreativeMode
 {
@@ -84,7 +85,7 @@ namespace DysonSphereProgram.Modding.ExposeCreativeMode
             CustomKeyBindSystem.RegisterKeyBind<HoldKeyBind>(builtinKey);
           else
             CustomKeyBindSystem.RegisterKeyBind<PressKeyBind>(builtinKey);
-          ProtoRegistry.RegisterString("KEY" + keyBind, keyBindDescriptions[keyBinds.IndexOf(keyBind)]);
+          LocalizationModule.RegisterTranslation("KEY" + keyBind, keyBindDescriptions[keyBinds.IndexOf(keyBind)]);
         }
       }
     }
