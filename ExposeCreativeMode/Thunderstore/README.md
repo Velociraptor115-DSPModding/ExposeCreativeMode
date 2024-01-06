@@ -3,7 +3,8 @@ This mod allows you to enable "Creative Mode" and play without limitations (Well
 Enabling "Creative Mode" will disable achievements for the save, so keep a separate save to use it on.
 
 ## What's new in this update?
-* Fixed Instant Research for logistic bot techs
+* Fixed compatibility issues with the combat update (0.10.28.xxxxx)
+* Instant Research's Relocking and Unlock All Tech is temporarily not working till it can be fixed in a better way
 
 ## How to use this mod
 * First install the mod, and reboot the game.
@@ -77,6 +78,10 @@ Or you can create an issue on [GitHub](https://github.com/Velociraptor115-DSPMod
 \- Raptor#4825
 
 ## Changelog
+
+### [v0.0.20](https://dsp.thunderstore.io/package/Raptor/ExposeCreativeMode/0.0.20/)
+* Fixed compatibility issues with the combat update (0.10.28.xxxxx)
+* Removed Instant Research's Relocking and Unlock All Tech temporarily till it can be fixed in a better way
 
 ### [v0.0.19](https://dsp.thunderstore.io/package/Raptor/ExposeCreativeMode/0.0.19/)
 * Fixed Instant Research for logistic bot techs
