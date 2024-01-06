@@ -51,7 +51,6 @@ namespace DysonSphereProgram.Modding.ExposeCreativeMode
       InfinitePowerPatch.Register(infinitePower = new InfinitePower());
       InfiniteReachPatch.Register(infiniteReach = new InfiniteReach(player));
       InstantResearchPatch.Register(instantResearch = new InstantResearch());
-      InfiniteResearchHelper.Reinitialize();
       infiniteStation = new InfiniteStation();
       instantBuild = new InstantBuild(player);
       InstantReplicatePatch.Register(instantReplicate = new InstantReplicate());
@@ -76,8 +75,6 @@ namespace DysonSphereProgram.Modding.ExposeCreativeMode
 
       if (active)
       {
-        if (CustomKeyBindSystem.GetKeyBind(KeyBinds.UnlockAllPublishedTech).keyValue)
-          InfiniteResearchHelper.UnlockAllTech();
         if (CustomKeyBindSystem.GetKeyBind(KeyBinds.FlattenPlanet).keyValue && player.factory != null)
         {
           Plugin.Log.LogDebug("Flatten Keybind pressed");

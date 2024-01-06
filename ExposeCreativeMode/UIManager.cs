@@ -257,14 +257,9 @@ namespace DysonSphereProgram.Modding.ExposeCreativeMode
             );
             CreateSection(mainSection, binding, section =>
             {
-              var enableLocking = new DelegateDataBindSource<bool>(() => controller?.instantResearch?.EnableLocking ?? false, value => { if (controller?.instantResearch != null) controller.instantResearch.EnableLocking = value; });
-              CreateEntry(section, "Enable Locking", CreateOnOffToggleButton(enableLocking, "Yes", "No").transform);
-              var unlockAllTechButton = 
-                MakeFancyButton("Unlock")
-                  .SetClickListener(InfiniteResearchHelper.UnlockAllTech)
-                  .BindInteractive(binding)
-                  ;
-              CreateEntry(section, "Unlock All Tech", unlockAllTechButton.transform);
+              static TextContext BrokenText() => Create.Text("disclaimer").WithText("Broken after combat update. Fix still WIP");
+              CreateEntry(section, "Enable Locking", BrokenText().transform);
+              CreateEntry(section, "Unlock All Tech", BrokenText().transform);
             });
           }
           
