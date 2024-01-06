@@ -40,7 +40,6 @@ namespace DysonSphereProgram.Modding.ExposeCreativeMode
     public void Init(CreativeModeController controller)
     {
       this.controller = controller;
-      this.controller = controller;
     }
 
     public void Free()
